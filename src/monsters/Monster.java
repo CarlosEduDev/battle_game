@@ -1,14 +1,14 @@
 package monsters;
 
-abstract class Monstro {
+abstract public class Monster {
     private String nome;
-    int nivel;
+    private int nivel;
 
-    public Monstro(int nivel) {
+    public Monster(int nivel) {
         this.nivel = nivel;
     }
 
-    public Monstro(String nome, int nivel) {
+    public Monster(String nome, int nivel) {
         this.nome = nome;
         this.nivel = nivel;
     }

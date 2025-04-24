@@ -1,13 +1,18 @@
 package monsters;
 
-public class Troll extends Monstro{
+public class Troll extends Monster {
+    public Troll(String nome, int nivel) {
+        super(nome, nivel);
+    }
+
     @Override
     public int calcularPontos() {
-        return 0;
+        int pontos = Multiplicador.calcularPontuacao(getNivel(), Multiplicador.TROLL);
+        return pontos;
     }
 
     @Override
     public String rugir() {
-        return "";
+        return "AAGGGHRR";
     }
 }

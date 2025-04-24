@@ -1,6 +1,6 @@
 package monsters;
 
-public class Goblin extends Monstro{
+public class Goblin extends Monster {
 
     public Goblin(String nome, int nivel) {
         super(nome, nivel);
@@ -8,12 +8,13 @@ public class Goblin extends Monstro{
 
     @Override
     public int calcularPontos() {
-        return 0;
+        int pontos = Multiplicador.calcularPontuacao(getNivel(), Multiplicador.GOBLIN);
+        return pontos;
     }
 
     @Override
     public String rugir() {
-        return "Grr";
+        return "Grruuuhh";
     }
 }
 
