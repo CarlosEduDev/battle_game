@@ -29,10 +29,6 @@ public class CombatSystem {
         System.out.println("O player " + player.getNome() + " pegou " + dragon.calcularPontos() + " xp");
         System.out.println("--------------------------------------------");
 
-        System.out.println("Pontuação final de " + player.getNome() + ": " + player.getPontuacao()); //112
-
-        System.out.println(goblin.calcularPontos());
-        System.out.println(dragon.calcularPontos());
-        System.out.println(troll.calcularPontos());
+        System.out.println("Pontuação final de " + player.getNome() + ": " + player.getPontuacao()); //108
     }
 }

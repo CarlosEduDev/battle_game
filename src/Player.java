@@ -1,5 +1,4 @@
 import monsters.Monster;
-import monsters.Multiplicador;
 
 public class Player {
     private final String nome;
@@ -10,7 +9,7 @@ public class Player {
     }
 
     public void derrotarMonstro(Monster monster){
-        pontuacao = monster.getNivel() * monster.calcularPontos();
+        pontuacao += monster.calcularPontos();
     }
 
     public int getPontuacao() {
